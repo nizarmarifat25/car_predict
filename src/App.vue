@@ -130,7 +130,7 @@ const prediksiHarga = async () => {
   await new Promise((r) => setTimeout(r, 800));
 
   try {
-    const response = await axios.post("/api/predict", {
+    const response = await axios.post("http://127.0.0.1:5000/predict", {
       tahun: tahun.value,
       km: km.value,
     });
